@@ -1,0 +1,8 @@
+type Query {
+    list(listing: Listing! = { size: 10 }): [String!]!
+}
+
+input Listing {
+    size: Int! = 10
+    after: String
+}
